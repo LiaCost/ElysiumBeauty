@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno Noite\\Documents\\ElysiumBeauty\\ElysiumBeauty.csproj": {}
+    "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\ElysiumBeauty.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno Noite\\Documents\\ElysiumBeauty\\ElysiumBeauty.csproj": {
+    "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\ElysiumBeauty.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno Noite\\Documents\\ElysiumBeauty\\ElysiumBeauty.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\ElysiumBeauty.csproj",
         "projectName": "ElysiumBeauty",
-        "projectPath": "C:\\Users\\Aluno Noite\\Documents\\ElysiumBeauty\\ElysiumBeauty.csproj",
+        "projectPath": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\ElysiumBeauty.csproj",
         "packagesPath": "C:\\Users\\Aluno Noite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno Noite\\Documents\\ElysiumBeauty\\obj\\",
+        "outputPath": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno Noite\\AppData\\Roaming\\NuGet\\NuGet.Config",
