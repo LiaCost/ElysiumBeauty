@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\desktop\\elysiumbeauty\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\desktop\\elysiumbeauty\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\desktop\\elysiumbeauty\\views\\usuario\\gerenciamento_de_usuario_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:views\\usuario\\gerenciamento_de_usuario_index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\desktop\\elysiumbeauty\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T20:35:46.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T20:24:47.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gerenciamento_de_Usuario_Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Views\\Usuario\\Gerenciamento_de_Usuario_Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\Gerenciamento_de_Usuario_Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Views\\Usuario\\Gerenciamento_de_Usuario_Index.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\Gerenciamento_de_Usuario_Index.cshtml",
+              "ViewState": "AQIAANgAAAAAAAAAAAAAAN8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T20:03:25.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE8AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T19:53:34.775Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
