@@ -59,3 +59,4 @@ C:\Users\Aluno Noite\Desktop\ElysiumBeauty\obj\Debug\net8.0\refint\ElysiumBeauty
 C:\Users\Aluno Noite\Desktop\ElysiumBeauty\obj\Debug\net8.0\ElysiumBeauty.pdb
 C:\Users\Aluno Noite\Desktop\ElysiumBeauty\obj\Debug\net8.0\ElysiumBeauty.genruntimeconfig.cache
 C:\Users\Aluno Noite\Desktop\ElysiumBeauty\obj\Debug\net8.0\ref\ElysiumBeauty.dll
+C:\Users\Aluno Noite\Desktop\ElysiumBeauty\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout_Gerenciamento.cshtml.rz.scp.css
