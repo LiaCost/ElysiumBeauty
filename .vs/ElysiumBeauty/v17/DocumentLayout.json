@@ -1,12 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Desktop\\ElysiumBeauty\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\ElysiumBeauty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\documents\\github\\elysiumbeauty\\views\\shared\\_layout_gerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:views\\shared\\_layout_gerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\documents\\github\\elysiumbeauty\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout_Gerenciamento.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\ElysiumBeauty\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_Gerenciamento.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\ElysiumBeauty\\Views\\Shared\\_Layout_Gerenciamento.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout_Gerenciamento.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T17:14:17.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\ElysiumBeauty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Documents\\GitHub\\ElysiumBeauty\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T17:14:03.892Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
