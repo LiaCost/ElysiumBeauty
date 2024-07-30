@@ -94,3 +94,6 @@ C:\Users\Aluno Noite\Documents\GitHub\ElysiumBeauty\obj\Debug\net8.0\refint\Elys
 C:\Users\Aluno Noite\Documents\GitHub\ElysiumBeauty\obj\Debug\net8.0\ElysiumBeauty.pdb
 C:\Users\Aluno Noite\Documents\GitHub\ElysiumBeauty\obj\Debug\net8.0\ElysiumBeauty.genruntimeconfig.cache
 C:\Users\Aluno Noite\Documents\GitHub\ElysiumBeauty\obj\Debug\net8.0\ref\ElysiumBeauty.dll
+C:\Users\Aluno Noite\Documents\ElysiumBeauty\obj\Debug\net8.0\ElysiumBeauty.sourcelink.json
+C:\Users\Aluno Noite\Documents\ElysiumBeauty\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout_Cadastro.cshtml.rz.scp.css
+C:\Users\Aluno Noite\Documents\ElysiumBeauty\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout_Gerenciamento.cshtml.rz.scp.css

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElysiumBeauty")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b99bdd4c7d349541ab185693e8a3db5d65fd722")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc6fb17e34c1475f5c55dea339fc89814671674c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElysiumBeauty")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElysiumBeauty")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

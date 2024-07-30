@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ElysiumBeauty
 build_property.RootNamespace = ElysiumBeauty
-build_property.ProjectDir = C:\Users\Aluno Noite\Documents\GitHub\ElysiumBeauty\
+build_property.ProjectDir = C:\Users\Aluno Noite\Documents\ElysiumBeauty\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Aluno Noite\Documents\GitHub\ElysiumBeauty
+build_property.MSBuildProjectDirectory = C:\Users\Aluno Noite\Documents\ElysiumBeauty
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Agendamento/Cadastro_Agendamento.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Agendamento/Cadastro_Agendamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cQ2FkYXN0cm9fQWdlbmRhbWVudG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Agendamento/Gerenciamento_Agendamento_Usuarios.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Agendamento/Gerenciamento_Agendamento_Usuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cR2VyZW5jaWFtZW50b19BZ2VuZGFtZW50b19Vc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Agendamento/Index.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Agendamento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Home/Index.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Servico/Index.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Servico/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydmljb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Shared/Error.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Usuario/Cadastro.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Usuario/Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYWRhc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Usuario/Index.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Usuario/Login.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Usuario/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/_ViewImports.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/_ViewStart.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Shared/_Layout.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s8zwy0n18k
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Shared/_Layout_Cadastro.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Shared/_Layout_Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfQ2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x0igrx7iyq
 
-[C:/Users/Aluno Noite/Documents/GitHub/ElysiumBeauty/Views/Shared/_Layout_Gerenciamento.cshtml]
+[C:/Users/Aluno Noite/Documents/ElysiumBeauty/Views/Shared/_Layout_Gerenciamento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfR2VyZW5jaWFtZW50by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-qbp3nxopw8
