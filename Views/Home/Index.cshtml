@@ -241,8 +241,12 @@
     <!-------------------- Services Area (Start) -------------------->
     <section class="service" id="service">
 
-        <div class="heading">
+        <div class="heading" style="text-align: center">
             <h2>Nossos <span>serviços</span></h2>
+            <br />
+            <button type="button" id="agendarButton" class="btn btn-secondary" data-bs-dismiss="modal" onclick="verificarUsuarioLogado()">
+                Agendar
+            </button>
         </div>
 
         <div class="box-container">
@@ -253,18 +257,13 @@
                 <p>Nossos tratamentos faciais incluem limpeza de pele profunda, peelings químicos,
                     microagulhamento, laser facial, radiofrequência e hidratação facial intensiva.
                 </p>
-                <br />
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #592919;  border-color: #8B4513; color: white">Agendar</button>
             </div>
 
             <div class="service-item">
                 <i class="fas fa-heart"></i>
                 <h3>Tratamentos Corporais</h3>
                 <p>Oferecemos massagens terapêuticas, lipocavitação, criolipólise, radiofrequência corporal,
-                    endermologia e envoltórios corporais para desintoxicação e hidratação.</p> 
-                <br />
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #592919;  border-color: #8B4513; color: white">Agendar</button>
-                    
+                    endermologia e envoltórios corporais para desintoxicação e hidratação.</p>            
             </div>
 
             <div class="service-item">
@@ -272,8 +271,7 @@
                 <h3>Tratamentos Capilares</h3>
                 <p>Nossos tratamentos capilares incluem mesoterapia, terapia com LED, PRP capilar,
                     detox capilar, hidratação e nutrição profunda dos fios.</p> 
-                <br />
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #592919;  border-color: #8B4513; color: white">Agendar</button>
+               
             </div>
 
             <div class="service-item">
@@ -282,8 +280,6 @@
                 <p>Oferecemos tratamento de calos e calosidades, cuidados com unhas encravadas,
                     tratamento de micoses, reflexologia podal, hidratação e esfoliação dos pés e tratamento para pés
                     diabéticos.</p>
-                <br />
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #592919;  border-color: #8B4513; color: white">Agendar</button>
             </div>
 
             <div class="service-item">
@@ -291,8 +287,6 @@
                 <h3>Bem-Estar e Terapias Alternativas</h3>
                 <p>Nossos serviços incluem aromaterapia, acupuntura estética, terapia com pedras quentes,
                     reflexologia, reiki e meditação guiada.</p>
-                <br />
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #592919;  border-color: #8B4513; color: white">Agendar</button>
             </div>
 
             <div class="service-item">
@@ -301,8 +295,6 @@
                 <p>Oferecemos depilação a laser, tratamentos para estrias e cicatrizes, tratamentos para flacidez,
                     bronzeamento artificial, clareamento de áreas específicas do corpo
                     e terapias de esfoliação corporal e hidratação profunda.</p>
-                <br />
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #592919;  border-color: #8B4513; color: white">Agendar</button>
             </div>
 
         </div>
@@ -726,7 +718,20 @@
             e.preventDefault();
         });
     </script>
+
     <script>
+
+        function verificarUsuarioLogado() {
+        var usuarioId = '@Environment.GetEnvironmentVariable("USUARIO_ID")'; // Variável do ambiente passada pelo backend
+        console.log(usuarioId)
+        if (usuarioId !== "") { // Verifica se o usuário está logado
+            // Se o usuário estiver logado, redireciona para a página de agendamento
+            window.location.href = "/Agendamento/Cadastro_Agendamento";
+        } else {
+            // Se não estiver logado, redireciona para a página de login
+            window.location.href = "/Usuario/Login";
+        }
+}
         // Script to handle the dropdown functionality
         document.querySelector('.dropdown').addEventListener('mouseover', function () {
             this.querySelector('.dropdown-content').style.display = 'block';
@@ -735,6 +740,7 @@
         document.querySelector('.dropdown').addEventListener('mouseout', function () {
             this.querySelector('.dropdown-content').style.display = 'none';
         });
+
     </script>
 </body>
 
