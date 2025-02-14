@@ -38,6 +38,7 @@ public partial class BdElysiumBeautyContext : DbContext
             entity.Property(e => e.DtHoraAgendamento).HasColumnType("datetime");
             entity.Property(e => e.FkServicoId).HasColumnName("fk_Servico_ID");
             entity.Property(e => e.FkUsuarioId).HasColumnName("fk_Usuario_ID");
+            entity.Property(e => e.Horario).HasPrecision(0);
 
             entity.HasOne(d => d.FkServico).WithMany(p => p.TbAgendamentos)
                 .HasForeignKey(d => d.FkServicoId)
@@ -64,6 +65,9 @@ public partial class BdElysiumBeautyContext : DbContext
         {
             entity.ToTable("Tb_Usuario");
 
+            entity.Property(e => e.DataHoraCadastro)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .IsUnicode(false);

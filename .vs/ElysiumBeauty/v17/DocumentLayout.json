@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\ElysiumBeauty\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\downloads\\elysiumbeauty\\controllers\\relat\u00F3riocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:controllers\\relat\u00F3riocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|c:\\users\\aluno noite\\downloads\\elysiumbeauty\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F294E02E-C712-403C-94EB-FA74B64FB23C}|ElysiumBeauty.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Relat\u00F3rioController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\ElysiumBeauty\\Controllers\\Relat\u00F3rioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Relat\u00F3rioController.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\ElysiumBeauty\\Controllers\\Relat\u00F3rioController.cs",
-              "RelativeToolTip": "Controllers\\Relat\u00F3rioController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:23:16.76Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\ElysiumBeauty\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\ElysiumBeauty\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AQIAALkAAAAAAAAAAAAkwIMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T17:27:47.777Z",
+              "EditorCaption": ""
             }
           ]
         }

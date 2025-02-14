@@ -1,0 +1,132 @@
+﻿
+/* Paleta de cores personalizada */
+:root {
+    --cor-principal: #592919;
+    --cor-secundaria: #A65F3C;
+    --cor-fundo: #EAE7DC;
+    --cor-botao: #A65F3C;
+    --cor-botao-hover: #8A4F2A;
+    --cor-texto: #333;
+    --cor-texto-claro: #555;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Centralização da logo no topo */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.image {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+/* Container do filtro */
+.filter-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--cor-secundaria);
+}
+
+    .filter-container h3 {
+        font-size: 26px;
+        color: var(--cor-principal);
+        margin-bottom: 20px;
+    }
+
+/* Estilos dos grupos de filtro */
+.filter-group {
+    margin-bottom: 20px;
+}
+
+    .filter-group label {
+        display: block;
+        font-size: 15px;
+        color: var(--cor-secundaria);
+        margin-bottom: 8px;
+    }
+
+.filter-input,
+.filter-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #f8f8f8;
+}
+
+    .filter-input:focus,
+    .filter-select:focus {
+        border-color: var(--cor-principal);
+        outline: none;
+    }
+
+/* Botão de pesquisa */
+.btn {
+    padding: 14px 28px;
+    background-color: var(--cor-botao);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: var(--cor-botao-hover);
+    }
+
+/* Seção de Relatório Expansível */
+.tabela-relatorio {
+    width: 100%;
+    min-height: 70vh; /* Garantindo que a seção ocupe boa parte da tela */
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes de layout responsivo */
+@media (max-width: 768px) {
+    .home {
+        padding: 20px 10px;
+    }
+
+    .filter-container {
+        padding: 20px;
+    }
+
+    .image img {
+        max-width: 90%;
+    }
+}
+
+

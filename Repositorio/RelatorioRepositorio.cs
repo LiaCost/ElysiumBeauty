@@ -1,225 +1,80 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ElysiumBeauty.Models;
 using ElysiumBeauty.ORM;
-using System.Globalization;
+
 
 namespace ElysiumBeauty.Repositorio
 {
-    public class AgendamentoRepositorio
+    public class RelatorioRepositorio
     {
 
         private BdElysiumBeautyContext _context;
-        public AgendamentoRepositorio(BdElysiumBeautyContext context)
+        public RelatorioRepositorio(BdElysiumBeautyContext context)
         {
             _context = context;
         }
 
-        // Método para inserir um novo agendamento
-        public bool InserirAgendamento(DateTime dtHoraAgendamento, DateOnly dataAtendimento, TimeOnly horario, int fkUsuarioId, int fkServicoId)
+        public List<ViewAgendamento> GetAgendamentos(
+        string campo1, string campo2, string campo3,
+        string valor1, string valor2, string valor3)
         {
-            try
+            if (string.IsNullOrEmpty(campo1) && string.IsNullOrEmpty(campo2) && string.IsNullOrEmpty(campo3) &&
+                string.IsNullOrEmpty(valor1) && string.IsNullOrEmpty(valor2) && string.IsNullOrEmpty(valor3))
             {
-                // Criando uma instância do modelo AtendimentoVM
-                var atendimento = new TbAgendamento
-                {
-                    DtHoraAgendamento = dtHoraAgendamento,
-                    DataAtendimento = dataAtendimento,
-                    Horario = horario,
-                    FkUsuarioId = fkUsuarioId,
-                    FkServicoId = fkServicoId
-                };
-
-                // Adicionando o atendimento ao contexto
-                _context.TbAgendamentos.Add(atendimento);
-                _context.SaveChanges(); // Persistindo as mudanças no banco de dados
-
-                return true; // Retorna true indicando sucesso
-            }
-            catch (Exception ex)
-            {
-                // Em caso de erro, pode-se logar a exceção (ex.Message)
-                return false; // Retorna false em caso de erro
-            }
-        }
-        public List<ViewAgendamentoVM> ListarAgendamentos()
-        {
-            List<ViewAgendamentoVM> listAgendamentos = new List<ViewAgendamentoVM>();
-
-            // Recuperando todos os agendamento do DbSet
-            var listTb = _context.ViewAgendamentos.ToList();
-
-            // Convertendo os agendamentos de TbAgendamento para AgendamentoVM
-            foreach (var item in listTb)
-            {
-                var agendamento = new ViewAgendamentoVM
-                {
-                    Id = item.Id,
-                    DtHoraAgendamento = item.DtHoraAgendamento,
-                    DataAtendimento = item.DataAtendimento,
-                    Horario = item.Horario,
-                    TipoServico = item.TipoServico,
-                    Valor = item.Valor,
-                    Nome = item.Nome,
-                    Email = item.Email,
-                    Telefone = item.Telefone,
-
-
-
-                };
-
-                listAgendamentos.Add(agendamento);
+                return _context.ViewAgendamentos
+                    .OrderBy(a => a.DtHoraAgendamento)
+                    .Take(1000)
+                    .ToList();
             }
 
-            return listAgendamentos;
+            var query = _context.ViewAgendamentos.AsQueryable();
+
+            // Método auxiliar para adicionar filtros dinamicamente
+            query = AplicarFiltro(query, campo1, valor1);
+            query = AplicarFiltro(query, campo2, valor2);
+            query = AplicarFiltro(query, campo3, valor3);
+
+            return query
+                .OrderBy(a => a.DtHoraAgendamento)
+                .Take(1000)
+                .ToList();
         }
 
-        public List<ViewAgendamentoVM> ListarAgendamentosCliente()
+        private IQueryable<ViewAgendamento> AplicarFiltro(IQueryable<ViewAgendamento> query, string campo, string valor)
         {
-            // Obtendo o ID do usuário a partir da variável de ambiente
-            string nome = Environment.GetEnvironmentVariable("USUARIO_NOME");
+            if (string.IsNullOrEmpty(campo) || string.IsNullOrEmpty(valor))
+                return query;
 
-            List<ViewAgendamentoVM> listAtendimentos = new List<ViewAgendamentoVM>();
-
-            // Recuperando todos os agendamentos que correspondem ao ID do usuário
-            var listTb = _context.ViewAgendamentos.Where(x => x.Nome == nome).ToList();
-
-            // Convertendo cada agendamento para ViewAgendamentoVM
-            foreach (var item in listTb)
+            switch (campo.ToLower())
             {
-                var atendimento = new ViewAgendamentoVM
-                {
-                    Id = item.Id,
-                    DtHoraAgendamento = item.DtHoraAgendamento,
-                    DataAtendimento = item.DataAtendimento,
-                    Horario = item.Horario,
-                    TipoServico = item.TipoServico,
-                    Valor = item.Valor,
-                    Nome = item.Nome,
-                    Email = item.Email,
-                    Telefone = item.Telefone,
-                };
-
-                listAtendimentos.Add(atendimento);
-            }
-
-            return listAtendimentos;
-        }
-
-        public List<UsuarioVM> ListarNomesAgendamentos()
-        {
-            // Lista para armazenar os usuários com apenas Id e Nome
-            List<UsuarioVM> listFun = new List<UsuarioVM>();
-
-            // Obter apenas os campos Id e Nome da tabela TbUsuarios
-            var listTb = _context.TbUsuarios
-                                 .Select(u => new UsuarioVM
-                                 {
-                                     Id = u.Id,
-                                     Nome = u.Nome
-                                 })
-                                 .ToList();
-
-            // Retorna a lista já com os campos filtrados
-            return listTb;
-        }
-        public bool AlterarAgendamento(int id, string data, int servico, TimeOnly horario)
-        {
-            try
-            {
-                TbAgendamento agt = _context.TbAgendamentos.Find(id);
-                DateOnly dtHoraAgendamento;
-                if (agt != null)
-                {
-                    agt.Id = id;
-                    if (data != null)
+                case "tiposervico":
+                    return query.Where(a => a.TipoServico == valor);
+                case "nome":
+                    return query.Where(a => a.Nome == valor);
+                case "email":
+                    return query.Where(a => a.Email == valor);
+                case "telefone":
+                    return query.Where(a => a.Telefone == valor);
+                case "valor":
+                    if (decimal.TryParse(valor, out decimal valorDecimal))
+                        return query.Where(a => a.Valor == valorDecimal);
+                    break;
+                case "dataatendimento":
+                    if (DateTime.TryParse(valor, out DateTime dateValue))
                     {
-                        if (DateOnly.TryParse(data, out dtHoraAgendamento))
-                        {
-                            agt.DataAtendimento = dtHoraAgendamento;
-                        }
+                        DateOnly dateOnlyValue = DateOnly.FromDateTime(dateValue);
+                        return query.Where(a => a.DataAtendimento == dateOnlyValue);
                     }
-
-                    // Corrigido a verificação do tipo TimeOnly
-                    if (horario != TimeOnly.MinValue)  // Verificando se o horário não é o valor padrão
-                    {
-                        agt.Horario = horario;
-                    }
-
-                    agt.FkServicoId = servico;
-                    _context.SaveChanges();
-                    return true;
-                }
-
-                return false;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
-        public bool ExcluirAgendamento(int id)
-        {
-            try
-            {
-
-
-                var agt = _context.TbAgendamentos.Where(a => a.Id == id).FirstOrDefault();
-                if (agt != null)
-                {
-                    _context.TbAgendamentos.Remove(agt);
-
-                }
-                _context.SaveChanges();
-                return true;
+                    break;
+                case "horario":
+                    if (DateTime.TryParse(valor, out DateTime timeValue))
+                        return query.Where(a => a.Horario.Hour == timeValue.Hour && a.Horario.Minute == timeValue.Minute);
+                    break;
             }
 
-            catch (Exception)
-            {
-
-                return false;
-            }
+            return query;
         }
 
-        public List<AgendamentoVM> ConsultarAgendamento(string datap)
-        {
-            if (string.IsNullOrEmpty(datap))
-            {
-                // Se o parâmetro for vazio ou nulo, retornamos uma lista vazia ou podemos tratar conforme necessário
-                Console.WriteLine("O parâmetro 'datap' está vazio ou nulo.");
-                return new List<AgendamentoVM>(); // Retorna uma lista vazia
-            }
-
-            try
-            {
-                // Tenta converter a string para DateOnly, caso contrário retorna uma lista vazia
-                DateOnly data = DateOnly.ParseExact(datap, "yyyy-MM-dd", CultureInfo.InvariantCulture);
-                string dataFormatada = data.ToString("yyyy-MM-dd"); // Formato desejado: "yyyy-MM-dd"
-                Console.WriteLine(dataFormatada);
-
-                // Consulta ao banco de dados, convertendo para o tipo AgendamentoVM
-                var ListaAgendamento = _context.TbAgendamentos
-                    .Where(a => a.DataAtendimento == DateOnly.Parse(dataFormatada))
-                    .Select(a => new AgendamentoVM
-                    {
-                        // Mapear as propriedades de TbAgendamento para AgendamentoVM
-                        Id = a.Id,
-                        DtHoraAgendamento = a.DtHoraAgendamento,
-                        DataAtendimento = DateOnly.Parse(dataFormatada),
-                        Horario = a.Horario,
-                        FkUsuarioId = a.FkUsuarioId,
-                        FkServicoId = a.FkServicoId
-                    })
-                    .ToList(); // Converte para uma lista
-
-                return ListaAgendamento;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao consultar agendamentos: {ex.Message}");
-                return new List<AgendamentoVM>(); // Retorna uma lista vazia em caso de erro
-            }
-        }
 
     }
 }

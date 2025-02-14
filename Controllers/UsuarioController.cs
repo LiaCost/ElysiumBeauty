@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
-namespace SiteAgendamento.Controllers
+namespace ElysiumBeauty.Controllers
 {
     public class UsuarioController : Controller
     {

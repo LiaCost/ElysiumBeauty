@@ -12,7 +12,8 @@ builder.Services.AddDbContext<BdElysiumBeautyContext>(options =>
 builder.Services.AddScoped<UsuarioRepositorio>();
 builder.Services.AddScoped<ServicoRepositorio>();
 builder.Services.AddScoped<AgendamentoRepositorio>();
-
+builder.Services.AddScoped<RelatorioRepositorio>();
+builder.Services.AddScoped<DashboardRepositorio>();
 // Adicionar suporte a sessões
 builder.Services.AddSession(options =>
 {

@@ -7,10 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\RelatórioController.cs" />
     <Compile Remove="Views\Usuario\Cadastro.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\relatorio.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Highsoft.Web.Mvc" Version="5.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
