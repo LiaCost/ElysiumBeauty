@@ -17,5 +17,5 @@ Gerenciar serviços disponíveis
 Acompanhar agendamentos realizados
 Gerenciar usuários
 
-💻 Tecnologias Utilizadas: HTML, CSS, JavaScript| C#, ASP.NET MVC| SQL Server, Entity Framework
+💻 Tecnologias Utilizadas: HTML, CSS, JavaScript | C#, ASP.NET MVC | SQL Server, Entity Framework
 
