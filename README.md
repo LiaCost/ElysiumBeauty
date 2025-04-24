@@ -1,5 +1,4 @@
-🌸 Elysium Beauty 🌸
-Elysium Beauty é uma plataforma completa de agendamentos para serviços de estética e cuidados corporais. O sistema permite que clientes explorem os serviços oferecidos,
+🌸 Elysium Beauty é uma plataforma completa de agendamentos para serviços de estética e cuidados corporais. O sistema permite que clientes explorem os serviços oferecidos,
 realizem agendamentos e acompanhem seus compromissos, enquanto administradores têm acesso a um painel de controle para gerenciar toda a plataforma.
 
 ✨ Funcionalidades ✨
@@ -13,7 +12,6 @@ Relatórios - Visualização de métricas e agendamentos
 Cadastro e login de usuários (clientes e administradores)
 Agendamento de serviços com data e hora
 Visualização de agendamentos futuros e passados
-
 Painel administrativo para:
 Gerenciar serviços disponíveis
 Acompanhar agendamentos realizados
